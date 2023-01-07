@@ -1,5 +1,6 @@
 package lk.ijse.employeemanager.service;
 
+import lk.ijse.employeemanager.exception.UserNotfoundException;
 import lk.ijse.employeemanager.model.Employee;
 import lk.ijse.employeemanager.repo.EmployeeRepo;
 import org.springframework.beans.factory.annotation.Autowired;
