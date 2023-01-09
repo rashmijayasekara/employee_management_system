@@ -19,4 +19,12 @@ class EmployeeServiceTest {
         Assertions.assertEquals(2,employeeService.findAllEmployees().size());
 
     }
+
+    @Test
+    void updateEmployee(){
+        EmployeeService employeeService = new EmployeeService(employeeRepo);
+        Employee employee1 = employeeService.findEmployeeById(2);
+        Employee employee2 = employeeService.updateEmployee(new Employee("Rashmi", "jayasekar7899@gamil.com", "Software Engineer", "0773376993", "sfsdfsd", "2345"));
+        Assertions.assertNotEquals(employee1,employee2);
+    }
 }
